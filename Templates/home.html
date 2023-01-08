@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+background-color: aliceblue;
+display:flex;
+justify-content:center;
+}
+h1{
+color:#04aa6d;
+font-size:32px;
+font-family: 'Montserrat';
+text-transform: uppercase;
+}
+label{
+font-size:20px;
+display:block;
+font-family: 'Montserrat';
+color:#675d35;
+margin-bottom:5px;
+}
+input{
+margin-bottom:25px;
+height:30px;
+width:100%;
+}
+input[type=submit]{
+width:auto;
+font-size:20px;
+padding: 0 30px;
+}
+</style>
+</head>
+<body>
+<div>
+<h1>Stock Prediction</h1>
+<form action ="/get_data" method = "POST">
+	<div class="form-group">
+                <label>Enter Stock Ticker Name:</label>
+                <input name="stock">
+            </div>
+		<div class="form-group">
+                <label>Enter Number of days required:</label>
+                <input name="days" type="number">
+            </div>
+<input type="submit" value="Submit">
+        </form>
+</div>
+
+</body>
+</html>
